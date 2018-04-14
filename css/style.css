@@ -27,17 +27,11 @@ ul {
     color: #fff;
     border: none;
     border-radius: 10px;
-    padding: 8px 10px;
+    padding: 12px 16px;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    box-shadow: 2px 2px 9px #ccc;
     cursor: pointer;
-}
-
-.button_1:hover {
-    color: var(--dark-color);
-    font-weight: bold;
 }
 
 .dark {
@@ -86,7 +80,8 @@ header #branding {
 
 header #branding h1 {
     margin: 0;
-    color: var(--button);
+    color: #ccc;
+    text-shadow: 2px 2px 8px black;
 }
 
 header nav {
@@ -97,6 +92,17 @@ header nav {
 header .current a {
     color: var(--button);
     font-weight: bold;
+}
+
+.section-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding-top: 8px;
+    min-height: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    line-height: 2.3;
 }
 
 /* Image Slider */
@@ -135,8 +141,8 @@ header .current a {
 }
 
 #newsletter input[type="email"],
-#page input[type="text"],
-#page input[type="password"] {
+#form input[type="text"],
+#form input[type="password"] {
     padding: 4px;
     height: 25px;
     width: 250px;
@@ -147,12 +153,16 @@ header .current a {
     margin-top: 20px;
 }
 
+#boxes header {
+    margin-bottom: 30px;
+}
+
 #boxes h1,
 .title {
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
-    color: var(--dark-color);
+    color: #e6e6e6;
 }
 
 #boxes .box {
@@ -172,13 +182,22 @@ header .current a {
 aside#sidebar {
     width: 30%;
     float: right;
-    margin-top: 52px;
+}
+
+aside#sidebar h2 {
+    margin: 5px auto;
 }
 
 aside#sidebar .quote input,
 aside#sidebar .quote textarea {
     width: 90%;
     padding: 10px;
+}
+
+.aside-quote {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--dark-color);
 }
 
 /* Main-col */
@@ -192,7 +211,7 @@ ul#services li {
     list-style: none;
     padding: 20px;
     border: 1px solid #ccc;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     background: #e6e6e6;
     border-radius: 15px;
 }
@@ -214,7 +233,7 @@ ul#services li {
 }
 
 .countdown {
-    font-size: 50px;
+    font-size: 3.1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,12 +242,11 @@ ul#services li {
 
 .countdown div {
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--dark-color);
     border-radius: 20px;
     margin: 5px;
-    background: black;
+    background: var(--dark-color);
     color: white;
-    opacity: .7;
 }
 
 .countdown div:first-child {
@@ -240,7 +258,7 @@ ul#services li {
     font-size: 25px;
 }
 
-#page {
+#form {
     background-color: var(--dark-color);
     margin: 0 auto;
     width: 35%;
@@ -251,13 +269,17 @@ ul#services li {
     border-radius: 15px;
 }
 
-#page h2 {
+#form h2 {
     margin: 0 0 10px 0;
     text-align: center;
 }
 
-#page form {
+#form form {
     text-align: center;
+}
+
+#form form label {
+    text-align: left;
 }
 
 textarea,
@@ -265,10 +287,11 @@ form input[type='email'],
 form input[type='text'],
 form input[type='password'] {
     color: #000;
+    font-weight: bolder;
     border-radius: 12px;
     background-color: #ccc;
     margin-bottom: 15px;
-    box-shadow: 2px 2px 3px #ccc;
+    padding: 5px;
 }
 
 input[type='submit'] {
@@ -285,6 +308,10 @@ input[type='submit'] {
 
 input#username {
     margin-bottom: 0;
+}
+
+.almost-full-width {
+    width: 95%;
 }
 
 .full-width {
@@ -325,17 +352,9 @@ input#username {
     background-repeat: no-repeat;
 }
 
-.slide1 {
-    background-image: url('../img/image11.jpg');
-}
-
-.slide2 {
-    background-image: url('../img/image22.jpeg');
-}
-
-.slide3 {
-    background-image: url('../img/image33.jpg');
-}
+.slide1 {background-image: url('../img/image11.jpg');}
+.slide2 {background-image: url('../img/image22.jpeg');}
+.slide3 {background-image: url('../img/image33.jpg');}
 
 .slide-content {
     display: flex;
@@ -414,6 +433,10 @@ input#username {
   flex-wrap: wrap;
 }
 
+div.dark {
+    margin: 15px 0;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -437,15 +460,8 @@ main header {
     text-align: center;
 }
 
-main div h3,
-main div h4 {
-    text-align: center;
-    color: var(--dark-color);
-}
-
-.aside-quote {
-    margin-bottom: 30px;
-    text-align: center;
+main div h2,
+main div h3 {
     color: var(--dark-color);
 }
 
@@ -453,7 +469,7 @@ footer {
     padding: 1px;
     margin-top: 15px;
     color: #fff;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     background-color: var(--button);
     text-align: center;
     letter-spacing: 4px;
@@ -462,9 +478,8 @@ footer {
 
 footer p {
     margin: 10px 0;
-    text-shadow: 2px 2px 3px var(--dark-color);
+    text-shadow: 1px 1px 1px var(--dark-color);
 }
-
 
 /* Media querries */
 @media (max-width: 768px) {
