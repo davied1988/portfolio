@@ -111,7 +111,7 @@ window.sr = ScrollReveal();
         origin:'top'
     });
     sr.reveal('.wrap', {
-        duration: 1300,
+        duration: 2200,
         origin:'bottom',
         distance: '50px'
     });
@@ -120,30 +120,44 @@ window.sr = ScrollReveal();
         origin:'bottom'
     });
     sr.reveal('#boxes', {
-        duration: 1200,
+        duration: 2200,
         origin:'left',
         distance:'600px',
         viewFactor: 0.2
     });
     sr.reveal('#page', {
-        duration: 1000,
+        duration: 1500,
         origin:'left',
         distance:'600px'
     });
     sr.reveal('#newsletter', {
-        duration: 1000,
+        duration: 1500,
         origin:'right',
         distance:'600px'
     });
     sr.reveal('.aside-quote', {
         duration: 2000,
-        origin:'bottom',
-        distance:'200px'
+        origin:'left',
+        distance:'600px'
+    });
+    sr.reveal('#main', {
+        duration: 2000,
+        origin:'right',
+        distance:'600px'
     });
     sr.reveal('.flex-gallery', {
-        duration: 1000,
+        duration: 1500,
         origin:'right',
         distance:'700px'
+    });
+    sr.reveal('#form', {
+        duration: 1500,
+        origin:'right',
+        distance:'700px'
+    });
+    sr.reveal('footer', {
+        duration: 2500,
+        origin:'bottom'
     });
 
 // Quote
