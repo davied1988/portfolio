@@ -1,8 +1,14 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --dark-color: #5b5454;
+    --button: #ff7b00;
+}
+
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--main-bg-color);
 }
 /* Global */
 .container {
@@ -17,7 +23,7 @@ ul {
 }
 
 .button_1 {
-    background-color: #ff7b00;
+    background-color: var(--button);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -30,13 +36,13 @@ ul {
 }
 
 .button_1:hover {
-    color: #5b5454;
+    color: var(--dark-color);
     font-weight: bold;
 }
 
 .dark {
     padding: 15px 15px 25px 15px;
-    background-color: #5b5454;
+    background-color: var(--dark-color);
     color: white;
     font-weight: bold;
     margin: 10px 0;
@@ -46,11 +52,11 @@ ul {
 
 /* Header */
 header {
-    background-color: #5b5454;
+    background-color: var(--dark-color);
     color: white;
-    padding-top: 10px;
+    padding-top: 8px;
     min-height: 50px;
-    border-bottom: #ff7b00 1px solid;
+    border-bottom: var(--button) 1px solid;
     position: sticky;
     top: 0;
     left: 0;
@@ -80,6 +86,7 @@ header #branding {
 
 header #branding h1 {
     margin: 0;
+    color: var(--button);
 }
 
 header nav {
@@ -87,18 +94,17 @@ header nav {
     margin-top: 10px;
 }
 
-header .highlight,
 header .current a {
-    color: #ff7b00;
+    color: var(--button);
     font-weight: bold;
 }
 
 /* Image Slider */
 #slider h5 {
-    text-shadow: 3px 3px 4px #5b5454;
+    text-shadow: 3px 3px 4px var(--dark-color);
 }
 
-/* Jumbotron */
+/* Showcase */
 #showcase {
     min-height: 60vh;
     background: url('../img/my-showcase.jpeg') no-repeat center;
@@ -112,7 +118,7 @@ header .current a {
 #newsletter {
     padding: 15px;
     color: #fff;
-    background: #5b5454;
+    background: var(--dark-color);
     width: 35%;
     margin: 0 auto;
     border-radius: 15px;
@@ -146,7 +152,7 @@ header .current a {
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
-    color: #5b5454;
+    color: var(--dark-color);
 }
 
 #boxes .box {
@@ -154,7 +160,7 @@ header .current a {
     width: 30%;
     padding: 10px;
     text-align: center;
-    color: #5b5454;
+    color: var(--dark-color);
 }
 
 #boxes .box img {
@@ -199,12 +205,12 @@ ul#services li {
 .landing h1 {
     font-size: 50px;
     margin: 0;
-    color: #5b5454;
+    color: var(--dark-color);
 }
 
 .landing p {
     font-size: 2em;
-    color: #5b5454;
+    color: var(--dark-color);
 }
 
 .countdown {
@@ -226,7 +232,7 @@ ul#services li {
 }
 
 .countdown div:first-child {
-    background: #ff7b00;
+    background: var(--button);
 }
 
 .countdown span {
@@ -235,7 +241,7 @@ ul#services li {
 }
 
 #page {
-    background-color: #5b5454;
+    background-color: var(--dark-color);
     margin: 0 auto;
     width: 35%;
     margin: 50px auto;
@@ -262,12 +268,12 @@ form input[type='password'] {
     border-radius: 12px;
     background-color: #ccc;
     margin-bottom: 15px;
-    box-shadow: 2px 2px 3px grey;
+    box-shadow: 2px 2px 3px #ccc;
 }
 
 input[type='submit'] {
-    background-color: #ff7b00;
-    color: #f3dad1;
+    background-color: var(--button);
+    color: #ccc;
     border: none;
     border-radius: 5px;
     padding: 8px 10px;
@@ -304,7 +310,6 @@ input#username {
 .slide-content {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 91vh;
     overflow-x: hidden;
@@ -363,7 +368,7 @@ input#username {
 }
 
 #arrow-left:hover {
-    border-color: transparent #5b5454 transparent transparent;
+    border-color: transparent var(--button) transparent transparent;
 }
 
 #arrow-right {
@@ -374,7 +379,7 @@ input#username {
 }
 
 #arrow-right:hover {
-    border-color: transparent transparent transparent #5b5454;
+    border-color: transparent transparent transparent var(--button);
 }
 
 /*PHOTOS*/
@@ -427,12 +432,29 @@ input#username {
   border: 4px solid #333;
 }
 
+/* Get Quote */
+main header {
+    text-align: center;
+}
+
+main div h3,
+main div h4 {
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.aside-quote {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
 footer {
     padding: 1px;
     margin-top: 15px;
     color: #fff;
     font-size: 1.9rem;
-    background-color: #ff7b00;
+    background-color: var(--button);
     text-align: center;
     letter-spacing: 4px;
     border-radius: 25px 25px 0 0;
@@ -440,7 +462,7 @@ footer {
 
 footer p {
     margin: 10px 0;
-    text-shadow: 2px 2px 3px #5b5454;
+    text-shadow: 2px 2px 3px var(--dark-color);
 }
 
 
