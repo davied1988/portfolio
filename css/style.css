@@ -475,12 +475,6 @@ footer p {
 }
 
 /* Media querries */
-@media (hover: none) {
-    .item:hover {
-        display: none;
-    }
-}
-
 @media (max-width: 1150px) {
     header #branding,
     header nav,
