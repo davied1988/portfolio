@@ -571,5 +571,8 @@ footer p {
     .aside-quote .author {
         font-size: 15px;
     }
+    #slider h5 {
+        display: none;
+    }
 }
 
