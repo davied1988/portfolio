@@ -8,21 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Dawid Grudziecki - Portfolio | Strona Główna</title>
+    <title>Dawid Grudziecki - Portfolio</title>
 </head>
 <body>
 <!-- Header -->
 <header>
-    <div class="container ">
+    <div class="container">
         <div id="branding">
             <a href="index.html"><h1>Dawid Grudziecki</h1></a>
         </div>
         <nav>
-            <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="whoami.html">Who Am I</a></li>
-                <li><a href="projects.html">Projects</a></li>
+            <ul id="start">
+                <li><a href="#start">Home</a></li>
+                <li><a href="#boxes">Skills</a></li>
+                <li><a href="#main">About</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#aside-section">More</a></li>
+                <li><a href="#end">End</a></li>
             </ul>
         </nav>
     </div>
@@ -33,7 +35,7 @@
     <div id="slider">
         <div class="slide slide1">
             <div class="slide-content">
-                <span><h5>Passion One: Front-End</h5></span>
+                <span><h5>Passion One: Front - End</h5></span>
             </div>
         </div>
         <div class="slide slide2">
@@ -154,8 +156,8 @@
 	</div>
 </section>
 <!-- Flexbox -->
-<section class="flex-gallery">
-    <h1 class="title section-header">Gallery</h1>
+<section class="flex-gallery" id="gallery-section">
+    <h1 class="title section-header">Flexbox Gallery</h1>
     <div class="flex-row">
         <div class="item equal img-1"></div>
         <div class="item equal img-2"></div>
@@ -178,8 +180,8 @@
     </div>
 </section>
 <!-- Aside Quote -->
-<section class="aside-quote">
-        <h1 class="section-header">Quote Of The Day</h1>
+<section class="aside-quote" id="aside-section">
+        <h1 class="section-header">Quote Of the Day</h1>
     <div>
         <h2 class="quote">quote</h2>
         <h3 class="author">author</h3>
@@ -189,29 +191,6 @@
     </div>
 </section>
 <hr>
-<!-- Main -->
-<section id="main">
-	<div class="container">
-		<article id="main-col">
-            <h2 class="section-header">About Me</h2>
-			<p>Suspendisse erat ante, hendrerit at nisl eget, placerat laoreet erat. Vestibulum erat dui, auctor ac sem a, varius fermentum sapien. Donec facilisis nec augue id sollicitudin. Aliquam eget lacinia metus, sit amet ornare justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sagittis mattis sodales. In laoreet id sem et sodales.</p>
-			<p class="dark">Aliquam vitae tortor leo. Cras tempor lorem non neque facilisis, at gravida massa interdum. Etiam tristique consequat turpis, ut blandit dui mattis eget. Vivamus quis nibh nibh. Fusce eget vehicula leo, ac sollicitudin sem. Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Curabitur dictum tellus purus. Mauris efficitur est blandit, malesuada nulla id, pulvinar lacus. Cras tortor nisi, rutrum id fermentum eu, pharetra at mauris. Duis vel enim turpis. Duis mollis euismod risus, imperdiet dictum neque interdum ut. Pellentesque pulvinar ex elit, in pretium diam mollis ut.</p>
-		</article>
-			<aside id="sidebar">
-				<div class="dark">
-					<h2>What I Do</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam autem fugiat error odit quod delectus accusamus possimus quos expedita, nisi harum, eaque assumenda? A nulla esse assumenda sunt unde! Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Suspendisse erat ante, hendrerit at nisl eget, placerat laoreet.</p>
-				</div>	
-			</aside>
-		</div>
-	</div>
-</section>
-<hr>
-<!-- Jumbotron -->
-<section id="showcase">
-    <div class="container">
-    </div>
-</section>
 <!-- Form -->
 <div id="form">
     <h2>Join Us! ;-) </h2>
@@ -224,9 +203,32 @@
         <button type="submit" class="button_1">lets sign up right now</button>
     </form>
 </div>
+<hr>
+<!-- Jumbotron -->
+<section id="showcase">
+    <div class="container">
+    </div>
+</section>
+<!-- Main 2 -->
+<section id="main">
+        <div class="container" id="end">
+            <article id="main-col">
+                <h2 class="section-header">About Me</h2>
+                <p>Suspendisse erat ante, hendrerit at nisl eget, placerat laoreet erat. Vestibulum erat dui, auctor ac sem a, varius fermentum sapien. Donec facilisis nec augue id sollicitudin. Aliquam eget lacinia metus, sit amet ornare justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sagittis mattis sodales. In laoreet id sem et sodales.</p>
+                <p class="dark">Aliquam vitae tortor leo. Cras tempor lorem non neque facilisis, at gravida massa interdum. Etiam tristique consequat turpis, ut blandit dui mattis eget. Vivamus quis nibh nibh. Fusce eget vehicula leo, ac sollicitudin sem. Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Curabitur dictum tellus purus. Mauris efficitur est blandit, malesuada nulla id, pulvinar lacus. Cras tortor nisi, rutrum id fermentum eu, pharetra at mauris. Duis vel enim turpis. Duis mollis euismod risus, imperdiet dictum neque interdum ut. Pellentesque pulvinar ex elit, in pretium diam mollis ut.</p>
+            </article>
+                <aside id="sidebar">
+                    <div class="dark">
+                        <h2>What I Do</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam autem fugiat error odit quod delectus accusamus possimus quos expedita, nisi harum, eaque assumenda? A nulla esse assumenda sunt unde! Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Aenean imperdiet ut est ut condimentum. Donec quis est mauris. Integer pellentesque faucibus ultrices. Suspendisse erat ante, hendrerit at nisl eget, placerat laoreet.</p>
+                    </div>	
+                </aside>
+            </div>
+        </div>
+    </section>
 <!-- Footer -->
 <footer>
-    <p>Dawid Grudziecki &copy; 2018 - All Rights Reserved </p>
+    <p>Dawid Grudziecki &copy; 2018 - All Rights Reserved</p>
 </footer>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
