@@ -195,13 +195,5 @@ $(document).ready(function() {
 	getQuote();
 	$('.trigger').click(function() {
 		getQuote();
-    })
-    
-    // Click Smooth Scroll
-    $(document).on('click', 'a[href^="#"]', function(event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
-    });
+	})
 });
