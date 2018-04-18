@@ -195,9 +195,9 @@ $(document).ready(function() {
 	getQuote();
 	$('.trigger').click(function() {
 		getQuote();
-    })
-    
-    // Click Smooth Scroll
+	})
+
+	// Click Smooth Scroll
     $(document).on('click', 'a[href^="#"]', function(event) {
         event.preventDefault();
         $('html, body').animate({
