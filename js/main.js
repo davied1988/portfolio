@@ -181,13 +181,13 @@ $(document).ready(function() {
 		if (!quoteAuthor.length) {
 			quoteAuthor = "Unknown author";
 		}
-		var tweetText = "Quote of the day - " + quoteText + " author: " + quoteAuthor;
+		var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 		if (tweetText.length > 140) {
 		getQuote();
 		} 	else {
 				var tweet = tweetLink + encodeURIComponent(tweetText);
 				$('.quote').text(quoteText);
-				$('.author').text("author: " + quoteAuthor);
+				$('.author').text("Author: " + quoteAuthor);
 				$('.tweet').attr('href', tweet);
 			}
 		}
